@@ -21,5 +21,5 @@ Open the `convertsubscriptionstorssfeeds.py` program, and open the `subscription
 
 Insert the RSS feeds into a feed reader and receive updates about videos from subscribed channels there!
 
-![A screenshot of YouTube videos in an RSS reader program called Fluent Reader](fluentReader.png)
+![A screenshot of YouTube videos in an RSS reader program called Fluent Reader](FluentReaderScreenshot.png)
 *Pictured: A YouTube-supported fork of Fluent Reader - [https://github.com/langballe/fluent-reader](https://github.com/langballe/fluent-reader)*
