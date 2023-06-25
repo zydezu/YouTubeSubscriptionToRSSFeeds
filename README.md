@@ -17,9 +17,9 @@ Click `next step`, select your desired destination and click `Create Export`
 
 Download the `takeout.zip` file and locate `subscriptions.csv`, it should be in `Takeout\YouTube and YouTube Music\subscriptions`
 
-Open the `convertsubscriptionstorssfeeds.py` program, and open the `subscriptions.csv` file when prompted - a `rssfeeds.txt` file will be exported after. The RSS feeds will be located in that file.
+Place your `subscriptions.csv` in the same folder as `convertsubscriptionstorssfeeds.py`, then run the `convertsubscriptionstorssfeeds.py` file. After is has been ran, a `rssfeeds.txt` file will be generated, the RSS feeds will be located in that file.
 
-Insert the RSS feeds into a feed reader and receive updates about videos from subscribed channels there!
+Insert the RSS feeds into a feed reader and receive updates about videos from subscribed channels there.
 
 ![A screenshot of YouTube videos in an RSS reader program called Fluent Reader](FluentReaderScreenshot.png)
 *Pictured: A YouTube-supported fork of Fluent Reader - [https://github.com/langballe/fluent-reader](https://github.com/langballe/fluent-reader)*

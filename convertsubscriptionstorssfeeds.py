@@ -1,19 +1,11 @@
-from tkinter import filedialog
+import time
 
 rssFeeds = []
 baseLink = "https://www.youtube.com/feeds/videos.xml?channel_id="
 
 #read supplied subscriptions.csv file
-#with open('subscriptions.csv', 'r', encoding="utf8") as f:
-#  subscriptions = f.readlines()
-
-#open file GUI
-filename = filedialog.askopenfilename(filetypes=[("subscriptions.csv","*.csv")])
-if filename == '':
-    exit()
-with open(filename, 'r', encoding='utf8') as file:
-    subscriptions = file.readlines()
-    file.close()
+with open('subscriptions.csv', 'r', encoding="utf8") as f:
+    subscriptions = f.readlines()
 
 #loop through all csv values
 for i in range(len(subscriptions)):
@@ -26,5 +18,5 @@ for i in range(len(subscriptions)):
 with open('rssfeeds.txt', 'w', encoding="utf8") as f:
     f.writelines(rssFeeds)
 
-print("Written feeds to rssfeeds.txt")
-input()
+print("Written feeds to rssfeeds.txt\nDone!")
+time.sleep(1)
