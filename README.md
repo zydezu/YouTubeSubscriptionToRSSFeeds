@@ -15,7 +15,7 @@ This python scripts converts a `subscriptions.csv` Google Takeout file, to a lis
 
 ### Python Script
 
-- Download the `takeout.zip` file and locate `subscriptions.csv`, it should be in `Takeout\YouTube and YouTube Music\subscriptions`
+- Download the `takeout.zip` file and locate `subscriptions.csv`, it should be in `Takeout/YouTube and YouTube Music/subscriptions`
 
 - Place your `subscriptions.csv` in the same folder as `convertsubscriptionstorssfeeds.py`, then run the `convertsubscriptionstorssfeeds.py` file. After is has been ran, a `rssfeeds.txt` file will be generated, the RSS feeds will be located in that file.
 
