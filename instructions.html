@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Usage Instructions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            :root{--backgroundcolour:#0d1117;--linkcolour:#fa5252;--linkhovercolour:#ffeeee}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";background-color:var(--backgroundcolour);color:#fff;margin:0 auto;max-width:850px;padding-bottom:100px}a:link,a:visited{color:var(--linkcolour);transition:color 80ms linear}a:hover{color:var(--linkhovercolour)}a:focus{border-radius:5px;outline:rgba(255,255,255,.8) solid 2px}a[target="_blank"]::after{content:"";width:1em;height:1em;margin:0 .05em 0 .1em;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' %3E%3Cpath d='M9 2v1h3.3L6 9.3l.7.7L13 3.7V7h1V2ZM4 4c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2V7l-1 1v4c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1V6c0-.6.4-1 1-1h4l1-1Z' style='fill:%23f66'/%3E%3C/svg%3E");background-size:contain;display:inline-block;vertical-align:sub}code{font-family:FMono-Regular,Consolas,DejaVu Sans Mono,Liberation Mono,Menlo,monospace!important;font-size:15px;padding:2px 5px;background-color:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.2);border-radius:5px}.title{font-size:2em;font-weight:800;color:rgba(255,255,255);margin-bottom:.2em}.horizontalLine{border-bottom:1px solid rgba(255,255,255,.2)}li{padding-bottom:15px}img{max-height:100%;max-width:100%;object-fit:contain}
+        </style>
+    </head>
+    <body>
+        <p class="title">YouTube Subscriptions to RSS Feeds</p>
+        <div class="horizontalLine"></div>
+        <p>This python scripts converts a <code>subscriptions.csv</code> Google Takeout file, to a list of valid RSS feeds for the associated YouTube subscriptions.</p>
+        
+        <p class="title">Instructions</p>
+        <div class="horizontalLine"></div>
+
+        <h3>Google Takeout</h3>
+        <ul>
+            <li>Go to the <a href="https://takeout.google.com/settings/takeout/custom/youtube" target="_blank">YouTube section of Google Takeout</a>.</li>
+            <li>Press the <code>All YouTube data included</code> button and deselect all, then select <code>subscriptions</code></li>
+            <li>Click <code>next step</code>, select your desired destination and click <code>Create Export</code></li>
+        </ul>
+        <img src="youtubetakeout.gif">
+
+        <h3>Python Script</h3>
+        <ul>
+            <li>Download the <code>takeout.zip</code> file and locate <code>subscriptions.csv</code>, it should be in <code>Takeout/YouTube and YouTube Music/subscriptions</code></li>
+            <li>Place your <code>subscriptions.csv</code> in the same folder as <code>convertsubscriptionstorssfeeds.py</code>, then run the <code>convertsubscriptionstorssfeeds.py</code> file.</li>
+            <li>After is has been ran, a <code>rssfeeds.txt</code> file will be generated, the RSS feeds will be located in that file.</li>
+            <li>Insert the RSS feeds into a feed reader and receive updates about videos from subscribed channels there.</li>
+        </ul>
+        <img src="FluentReaderScreenshot.png">
+        <caption><i>Pictured: A YouTube-supported fork of Fluent Reader - <a href="https://github.com/langballe/fluent-reader">https://github.com/langballe/fluent-reader</a></i></caption>
+        
+    </body>
+</html>
